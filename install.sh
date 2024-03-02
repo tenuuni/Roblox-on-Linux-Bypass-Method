@@ -1,8 +1,9 @@
 #!/bin/bash
+# https://drive.massgrave.dev/en-us_windows_10_consumer_editions_version_22h2_updated_feb_2024_x64_dvd_c937d96c.iso old iso 22h2
 echo you NEED A USB FOR THIS TO WORK!!!!!!! to run this script you must add the argument "ihaveausbthatislargerthan8gb" to the script (e.g. bash install.sh ihaveausbthatislargerthab8gb)
 if [ $1 == "ihaveausbthatislargerthan8gb" ]
 then
-curl https://drive.massgrave.dev/en-us_windows_10_consumer_editions_version_22h2_updated_feb_2024_x64_dvd_c937d96c.iso -O ~/Desktop/temp.iso
+curl https://dl.malwarewatch.org/windows/Windows-10-1607.iso -O ~/Desktop/temp.iso
 curl https://github.com/balena-io/etcher/releases/download/v1.18.11/balenaEtcher-1.18.11-x64.AppImage -O ~/Desktop/temp2.AppImage
 ~/Desktop/temp2.AppImage
 echo now you must do this yourself, click Flash from File and select the temp.iso file that has been downloaded to your desktop.
